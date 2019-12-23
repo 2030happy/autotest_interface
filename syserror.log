@@ -1,0 +1,221 @@
+2019-10-16 07:00:27,354 opmysql.py[line:63] ERROR (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* from config_total' at line 1")
+Traceback (most recent call last):
+  File "E:/python_workspace/autotest_interface/common/opmysql.py", line 52, in op_sql
+    self.cur.execute(condition)#执行SQL语句
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* from config_total' at line 1")
+2019-10-18 07:26:23,238 opmysql.py[line:145] ERROR (1136, "Column count doesn't match value count at row 1")
+Traceback (most recent call last):
+  File "E:/python_workspace/autotest_interface/common/opmysql.py", line 132, in insert_data
+    results = self.cur.executemany(condition, params)#返回插入的数据条数
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\cursors.py", line 197, in executemany
+    self._get_db().encoding)
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\cursors.py", line 234, in _do_execute_many
+    rows += self.execute(sql + postfix)
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1136, "Column count doesn't match value count at row 1")
+2019-10-18 07:26:23,327 opmysql.py[line:145] ERROR (1136, "Column count doesn't match value count at row 1")
+Traceback (most recent call last):
+  File "E:/python_workspace/autotest_interface/common/opmysql.py", line 132, in insert_data
+    results = self.cur.executemany(condition, params)#返回插入的数据条数
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\cursors.py", line 197, in executemany
+    self._get_db().encoding)
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\cursors.py", line 234, in _do_execute_many
+    rows += self.execute(sql + postfix)
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1136, "Column count doesn't match value count at row 1")
+2019-10-18 07:28:25,842 opmysql.py[line:145] ERROR (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1")
+Traceback (most recent call last):
+  File "E:/python_workspace/autotest_interface/common/opmysql.py", line 132, in insert_data
+    results = self.cur.executemany(condition, params)#返回插入的数据条数
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\cursors.py", line 199, in executemany
+    self.rowcount = sum(self.execute(query, arg) for arg in args)
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\cursors.py", line 199, in <genexpr>
+    self.rowcount = sum(self.execute(query, arg) for arg in args)
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1")
+2019-10-18 07:28:25,849 opmysql.py[line:145] ERROR (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1")
+Traceback (most recent call last):
+  File "E:/python_workspace/autotest_interface/common/opmysql.py", line 132, in insert_data
+    results = self.cur.executemany(condition, params)#返回插入的数据条数
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\cursors.py", line 199, in executemany
+    self.rowcount = sum(self.execute(query, arg) for arg in args)
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\cursors.py", line 199, in <genexpr>
+    self.rowcount = sum(self.execute(query, arg) for arg in args)
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1")
+2019-10-18 07:29:29,175 opmysql.py[line:145] ERROR (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '())' at line 1")
+Traceback (most recent call last):
+  File "E:/python_workspace/autotest_interface/common/opmysql.py", line 132, in insert_data
+    results = self.cur.executemany(condition, params)#返回插入的数据条数
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\cursors.py", line 199, in executemany
+    self.rowcount = sum(self.execute(query, arg) for arg in args)
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\cursors.py", line 199, in <genexpr>
+    self.rowcount = sum(self.execute(query, arg) for arg in args)
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '())' at line 1")
+2019-10-18 07:29:29,181 opmysql.py[line:145] ERROR (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '())' at line 1")
+Traceback (most recent call last):
+  File "E:/python_workspace/autotest_interface/common/opmysql.py", line 132, in insert_data
+    results = self.cur.executemany(condition, params)#返回插入的数据条数
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\cursors.py", line 199, in executemany
+    self.rowcount = sum(self.execute(query, arg) for arg in args)
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\cursors.py", line 199, in <genexpr>
+    self.rowcount = sum(self.execute(query, arg) for arg in args)
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '())' at line 1")
+2019-10-18 07:30:20,956 opmysql.py[line:145] ERROR (1136, "Column count doesn't match value count at row 1")
+Traceback (most recent call last):
+  File "E:/python_workspace/autotest_interface/common/opmysql.py", line 132, in insert_data
+    results = self.cur.executemany(condition, params)#返回插入的数据条数
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\cursors.py", line 197, in executemany
+    self._get_db().encoding)
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\cursors.py", line 234, in _do_execute_many
+    rows += self.execute(sql + postfix)
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1136, "Column count doesn't match value count at row 1")
+2019-10-18 07:30:20,987 opmysql.py[line:145] ERROR (1136, "Column count doesn't match value count at row 1")
+Traceback (most recent call last):
+  File "E:/python_workspace/autotest_interface/common/opmysql.py", line 132, in insert_data
+    results = self.cur.executemany(condition, params)#返回插入的数据条数
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\cursors.py", line 197, in executemany
+    self._get_db().encoding)
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\cursors.py", line 234, in _do_execute_many
+    rows += self.execute(sql + postfix)
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1136, "Column count doesn't match value count at row 1")

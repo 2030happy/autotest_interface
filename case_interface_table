@@ -1,0 +1,27 @@
+#创建表
+create table case_interface(
+id int(2) not null auto_increment,
+name_interface varchar(128) not null comment '接口名称',
+exe_level int(2) default null comment '执行优先级，0代表BVT',
+exe_mode varchar(4) default null comment '执行方式：post、get，默认是post方式',
+url_interface varchar(128) default null comment '接口地址：直接使用HTTP开头的详细地址',
+header_interface text comment '接口请求的头文件，有则使用，无则不用',
+params_interface varchar(256) default null comment '接口请求的参数',
+result_interface text comment '接口返回结果',
+code_to_compare varchar(16) default null comment '待比较的Code值，用户自定义比较值，例如ReturnCode和Code等，默认ReturnCode',
+code_actual varchar(16) default null comment '接口实际Code返回值',
+code_expect varchar(16) default null comment '接口实际Code返回值',
+result_code_compare int(2) default null comment 'Code比较结果，1-pass，0-fail，2-无待比较参数，3-比较出错，4-返回包含不合法，9-系统异常',
+params_to_compare varchar(256) default null comment '接口比较参数集合，用于比较参数的完整性',
+params_actual text comment '接口实际返回参数',
+result_params_compare int(2) default null comment '参数完整性比较结果，1-pass，0-fail，2-参数错误，9-系统异常',
+case_status int(2) default '0' comment '用例状态，1-有效，0-无效',
+create_time timestamp null default current_timestamp comment '创建时间',
+update_time timestamp null default current_timestamp on update current_timestamp comment '更新时间',
+primary key(id)) engine=InnoDB auto_increment=1 default charset=utf8 comment='接口用例表';
+
+#插入值
+insert into case_interface (name_interface,exe_level,exe_mode,url_interface,header_interface,params_interface,code_to_compare,
+code_expect,params_to_compare,case_status,create_time,update_time) values('getIpInfo.php', 0, 'GET',
+'http://ip.taobao.com/service/getIPinfo.php', '{\'Host\':\'ip.taobao.com\'}', 'ip=63.223.108.4', 'code', '0',
+'[\'code\',\'data\',\'country\']', 1, NOW(), NOw());
