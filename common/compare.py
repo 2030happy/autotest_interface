@@ -172,15 +172,18 @@ logging.DEBUG,foramt='%(asctime)s %(filename)s[line:%(lineno)d] %(levelname)% %(
 #测试
 if __name__ == "__main__":
     sen_sql = "select * from case_interface where name_interface='GetServerStatus' and id=2;"
-
     params_interface = operation_db.select_one(sen_sql)
+    print(params_interface,"\n")
     result_interface = params_interface['data']['result_interface']
+    print("接口返回结果:",result_interface,"\n")
     test_compare_param = CompareParam(params_interface['data'])
     result_compare_code = test_compare_param.compare_code(result_interface)#关键参数数值比较
     print(result_compare_code)
     result_compare_params_complete=\
         test_compare_param.compare_params_complete(result_interface)#参数完整性比较
     print(result_compare_params_complete)
+    # """
+
 
 
 

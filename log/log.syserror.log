@@ -1,0 +1,286 @@
+2019-12-23 07:11:45,798 compare.py[line:127] ERROR 'NoneType' object has no attribute 'startswith'
+Traceback (most recent call last):
+  File "E:/python_workspace/autotest_interface/common/compare.py", line 107, in __recur_params
+    if result_interface.startswith('{') and \
+AttributeError: 'NoneType' object has no attribute 'startswith'
+2019-12-23 07:11:45,800 opmysql.py[line:63] ERROR (1064, 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near \'and id="2"\' at line 1')
+Traceback (most recent call last):
+  File "E:\python_workspace\autotest_interface\common\opmysql.py", line 52, in op_sql
+    self.cur.execute(condition)#Ö´ÐÐSQLÓï¾ä
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1064, 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near \'and id="2"\' at line 1')
+2019-12-23 07:15:59,021 compare.py[line:127] ERROR 'NoneType' object has no attribute 'startswith'
+Traceback (most recent call last):
+  File "E:/python_workspace/autotest_interface/common/compare.py", line 107, in __recur_params
+    if result_interface.startswith('{') and \
+AttributeError: 'NoneType' object has no attribute 'startswith'
+2019-12-23 07:15:59,022 opmysql.py[line:63] ERROR (1064, 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near \'and id="2"\' at line 1')
+Traceback (most recent call last):
+  File "E:\python_workspace\autotest_interface\common\opmysql.py", line 52, in op_sql
+    self.cur.execute(condition)#Ö´ÐÐSQLÓï¾ä
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1064, 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near \'and id="2"\' at line 1')
+2019-12-23 07:16:47,448 compare.py[line:127] ERROR 'NoneType' object has no attribute 'startswith'
+Traceback (most recent call last):
+  File "E:/python_workspace/autotest_interface/common/compare.py", line 107, in __recur_params
+    if result_interface.startswith('{') and \
+AttributeError: 'NoneType' object has no attribute 'startswith'
+2019-12-23 07:16:47,449 opmysql.py[line:63] ERROR (1064, 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near \'and id="2"\' at line 1')
+Traceback (most recent call last):
+  File "E:\python_workspace\autotest_interface\common\opmysql.py", line 52, in op_sql
+    self.cur.execute(condition)#Ö´ÐÐSQLÓï¾ä
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1064, 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near \'and id="2"\' at line 1')
+2019-12-25 06:48:39,848 compare.py[line:127] ERROR 'NoneType' object has no attribute 'startswith'
+Traceback (most recent call last):
+  File "E:/python_workspace/autotest_interface/common/compare.py", line 107, in __recur_params
+    if result_interface.startswith('{') and \
+AttributeError: 'NoneType' object has no attribute 'startswith'
+2019-12-25 06:48:39,879 opmysql.py[line:63] ERROR (1064, 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near \'and id="2"\' at line 1')
+Traceback (most recent call last):
+  File "E:\python_workspace\autotest_interface\common\opmysql.py", line 52, in op_sql
+    self.cur.execute(condition)#Ö´ÐÐSQLÓï¾ä
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1064, 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near \'and id="2"\' at line 1')
+2019-12-25 07:14:02,081 compare.py[line:127] ERROR 'NoneType' object has no attribute 'startswith'
+Traceback (most recent call last):
+  File "E:/python_workspace/autotest_interface/common/compare.py", line 107, in __recur_params
+    if result_interface.startswith('{') and \
+AttributeError: 'NoneType' object has no attribute 'startswith'
+2019-12-25 07:14:02,082 opmysql.py[line:63] ERROR (1064, 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near \'and id="2"\' at line 1')
+Traceback (most recent call last):
+  File "E:\python_workspace\autotest_interface\common\opmysql.py", line 52, in op_sql
+    self.cur.execute(condition)#Ö´ÐÐSQLÓï¾ä
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1064, 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near \'and id="2"\' at line 1')
+2019-12-26 06:38:24,830 compare.py[line:127] ERROR 'NoneType' object has no attribute 'startswith'
+Traceback (most recent call last):
+  File "E:/python_workspace/autotest_interface/common/compare.py", line 107, in __recur_params
+    if result_interface.startswith('{') and \
+AttributeError: 'NoneType' object has no attribute 'startswith'
+2019-12-26 06:38:24,855 opmysql.py[line:63] ERROR (1064, 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near \'and id="2"\' at line 1')
+Traceback (most recent call last):
+  File "E:\python_workspace\autotest_interface\common\opmysql.py", line 52, in op_sql
+    self.cur.execute(condition)#Ö´ÐÐSQLÓï¾ä
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1064, 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near \'and id="2"\' at line 1')
+2019-12-26 06:42:47,955 compare.py[line:127] ERROR 'NoneType' object has no attribute 'startswith'
+Traceback (most recent call last):
+  File "E:/python_workspace/autotest_interface/common/compare.py", line 107, in __recur_params
+    if result_interface.startswith('{') and \
+AttributeError: 'NoneType' object has no attribute 'startswith'
+2019-12-26 06:42:47,990 opmysql.py[line:63] ERROR (1064, 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near \'and id="2"\' at line 1')
+Traceback (most recent call last):
+  File "E:\python_workspace\autotest_interface\common\opmysql.py", line 52, in op_sql
+    self.cur.execute(condition)#Ö´ÐÐSQLÓï¾ä
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1064, 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near \'and id="2"\' at line 1')
+2019-12-26 06:43:46,062 compare.py[line:127] ERROR 'NoneType' object has no attribute 'startswith'
+Traceback (most recent call last):
+  File "E:/python_workspace/autotest_interface/common/compare.py", line 107, in __recur_params
+    if result_interface.startswith('{') and \
+AttributeError: 'NoneType' object has no attribute 'startswith'
+2019-12-26 06:43:46,063 opmysql.py[line:63] ERROR (1064, 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near \'and id="2"\' at line 1')
+Traceback (most recent call last):
+  File "E:\python_workspace\autotest_interface\common\opmysql.py", line 52, in op_sql
+    self.cur.execute(condition)#Ö´ÐÐSQLÓï¾ä
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1064, 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near \'and id="2"\' at line 1')
+2019-12-26 06:51:22,172 compare.py[line:127] ERROR 'NoneType' object has no attribute 'startswith'
+Traceback (most recent call last):
+  File "E:/python_workspace/autotest_interface/common/compare.py", line 107, in __recur_params
+    if result_interface.startswith('{') and \
+AttributeError: 'NoneType' object has no attribute 'startswith'
+2019-12-26 06:51:22,173 opmysql.py[line:63] ERROR (1064, 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near \'and id="2"\' at line 1')
+Traceback (most recent call last):
+  File "E:\python_workspace\autotest_interface\common\opmysql.py", line 52, in op_sql
+    self.cur.execute(condition)#Ö´ÐÐSQLÓï¾ä
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1064, 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near \'and id="2"\' at line 1')
+2019-12-26 06:52:14,753 compare.py[line:127] ERROR 'NoneType' object has no attribute 'startswith'
+Traceback (most recent call last):
+  File "E:/python_workspace/autotest_interface/common/compare.py", line 107, in __recur_params
+    if result_interface.startswith('{') and \
+AttributeError: 'NoneType' object has no attribute 'startswith'
+2019-12-26 06:52:14,754 opmysql.py[line:63] ERROR (1064, 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near \'and id="2"\' at line 1')
+Traceback (most recent call last):
+  File "E:\python_workspace\autotest_interface\common\opmysql.py", line 52, in op_sql
+    self.cur.execute(condition)#Ö´ÐÐSQLÓï¾ä
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1064, 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near \'and id="2"\' at line 1')
+2019-12-26 06:52:33,120 compare.py[line:127] ERROR 'NoneType' object has no attribute 'startswith'
+Traceback (most recent call last):
+  File "E:/python_workspace/autotest_interface/common/compare.py", line 107, in __recur_params
+    if result_interface.startswith('{') and \
+AttributeError: 'NoneType' object has no attribute 'startswith'
+2019-12-26 06:52:33,121 opmysql.py[line:63] ERROR (1064, 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near \'and id="2"\' at line 1')
+Traceback (most recent call last):
+  File "E:\python_workspace\autotest_interface\common\opmysql.py", line 52, in op_sql
+    self.cur.execute(condition)#Ö´ÐÐSQLÓï¾ä
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1064, 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near \'and id="2"\' at line 1')

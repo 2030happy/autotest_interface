@@ -137,14 +137,17 @@ if __name__ == "__main__":
     test_db = opmysql.OperationDbInterface(host_db='localhost', user_db='root',
             passwd_db='2030',name_db='you', port_db=3306, link_type=0)
     sen_sql = "select exe_mode,url_interface,header_interface, " \
-              "params_interface from case_interface where name_interface='getIpInfo.php'"
+              "params_interface from case_interface where name_interface='GetServerStatus'"
     params_interface=test_db.select_one(sen_sql)
+    print(params_interface)
     if params_interface['code'] == '0000':
         url_interface = params_interface['data']['url_interface']
         temp = params_interface['data']['header_interface']
         headerdata=eval(params_interface['data']['header_interface']) #将unicode转换成字典
         param_interface = params_interface['data']['params_interface']
         type_interface = params_interface['data']['exe_mode']
+        # print(type_interface)
+
         if url_interface != '' and headerdata != '' and param_interface != '' and type_interface !='':
             result=test_interface.http_request(interface_url=url_interface,
                         headerdata=headerdata,interface_param=param_interface,

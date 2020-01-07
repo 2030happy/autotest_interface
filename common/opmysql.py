@@ -135,10 +135,9 @@ class OperationDbInterface(object):
                   'data': results}
         except pymysql.Error as e:
             self.conn.rollback() # 执行回滚操作
-            self.conn.rollback()  # 执行回滚操作
             result = {'code': '9999', 'message': '执行批量插入异常', 'data': []}
             print("数据库错误|op_sql %d: %s" % (e.args[0], e.args[1]))
-            logging.basicConfig(filename=config.src_path + '/syserror.log',
+            logging.basicConfig(filename=config.src_path + '/log/syserror.log',
                                 level=logging.DEBUG,
             format='%(asctime)s %(filename)s[line:%(lineno)d] %(levelname)s %(message)s')
             logger = logging.getLogger(__name__)
@@ -156,6 +155,7 @@ class OperationDbInterface(object):
 
 
 if __name__ == '__main__':
+
     test = OperationDbInterface()  # 实力化
     result_select_all = test.select_all("select * from config_total") # 查询多条数据
     result_select_one = test.select_one("select * from config_total where id=1") # 查询多行

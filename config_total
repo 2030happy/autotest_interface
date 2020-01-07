@@ -1,0 +1,23 @@
+创建表config_total
+CREATE TABLE `config_total` (
+  `id` int(2) NOT NULL AUTO_INCREMENT,
+  `key_config` varchar(128) DEFAULT NULL COMMENT '关键字名称',
+  `value_config` text COMMENT '关键字值',
+  `description` varchar(128) DEFAULT NULL COMMENT '关键字解释信息',
+  `status` int(2) DEFAULT NULL,
+  `create_time` timestamp NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
+  `update_time` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新时间',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8 COMMENT='接口测试配置表';
+
+
+在config_total表中新增导出数据设置
+INSERT INTO config_total (key_config, value_config, description, status,
+create_time, update_time) values ('name_export', "['getIpInfo.php','BaikeLemmaCardApi']", '导出接口数据配置',
+'1',now(), now()) ;
+
+在config_total表中新增导出数据设置
+insert into config_total(key_config,value_config,description,status) values('exe_setup',
+'{\'getIpInfo.php\':{\'level_check\':[0,1],\'level_exe\':[0,1,2]}}',
+'执行接口的条件设置,{接口名称：{检查级别:[0,1]，执行级别:[0,1,2]}}。检查级别中[0,1]代表code和参数完整性检查,
+执行级别中[0,1]分别代表BVT，1级用用例', '1');

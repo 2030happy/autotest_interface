@@ -219,3 +219,61 @@ Traceback (most recent call last):
   File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
     raise errorclass(errno, errval)
 pymysql.err.InternalError: (1136, "Column count doesn't match value count at row 1")
+2020-01-03 07:13:25,815 opmysql.py[line:90] ERROR (1146, "Table 'you.config_' doesn't exist")
+Traceback (most recent call last):
+  File "E:\python_workspace\autotest_interface\common\opmysql.py", line 74, in select_one
+    rows_affect = self.cur.execute(condition)
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table 'you.config_' doesn't exist")
+2020-01-07 06:54:42,207 analyse.py[line:67] ERROR File size is 0 bytes
+Traceback (most recent call last):
+  File "E:/python_workspace/autotest_interface/common/analyse.py", line 37, in export2excel
+    formatting_info=True)
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\xlrd\__init__.py", line 157, in open_workbook
+    ragged_rows=ragged_rows,
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\xlrd\book.py", line 88, in open_workbook_xls
+    ragged_rows=ragged_rows,
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\xlrd\book.py", line 616, in biff2_8_load
+    raise XLRDError("File size is 0 bytes")
+xlrd.biffh.XLRDError: File size is 0 bytes
+2020-01-07 07:26:22,996 analyse.py[line:67] ERROR Unsupported format, or corrupt file: Expected BOF record; found b'1\r\n'
+Traceback (most recent call last):
+  File "E:/python_workspace/autotest_interface/common/analyse.py", line 37, in export2excel
+    formatting_info=True)
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\xlrd\__init__.py", line 157, in open_workbook
+    ragged_rows=ragged_rows,
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\xlrd\book.py", line 92, in open_workbook_xls
+    biff_version = bk.getbof(XL_WORKBOOK_GLOBALS)
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\xlrd\book.py", line 1278, in getbof
+    bof_error('Expected BOF record; found %r' % self.mem[savpos:savpos+8])
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\xlrd\book.py", line 1272, in bof_error
+    raise XLRDError('Unsupported format, or corrupt file: ' + msg)
+xlrd.biffh.XLRDError: Unsupported format, or corrupt file: Expected BOF record; found b'1\r\n'
+2020-01-07 07:28:05,867 analyse.py[line:67] ERROR Unsupported format, or corrupt file: Expected BOF record; found b'\r\n'
+Traceback (most recent call last):
+  File "E:/python_workspace/autotest_interface/common/analyse.py", line 37, in export2excel
+    formatting_info=True)
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\xlrd\__init__.py", line 157, in open_workbook
+    ragged_rows=ragged_rows,
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\xlrd\book.py", line 92, in open_workbook_xls
+    biff_version = bk.getbof(XL_WORKBOOK_GLOBALS)
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\xlrd\book.py", line 1278, in getbof
+    bof_error('Expected BOF record; found %r' % self.mem[savpos:savpos+8])
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\xlrd\book.py", line 1272, in bof_error
+    raise XLRDError('Unsupported format, or corrupt file: ' + msg)
+xlrd.biffh.XLRDError: Unsupported format, or corrupt file: Expected BOF record; found b'\r\n'
