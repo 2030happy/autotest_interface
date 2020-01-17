@@ -277,3 +277,16 @@ Traceback (most recent call last):
   File "D:\Program Files (x86)\Python36-32\lib\site-packages\xlrd\book.py", line 1272, in bof_error
     raise XLRDError('Unsupported format, or corrupt file: ' + msg)
 xlrd.biffh.XLRDError: Unsupported format, or corrupt file: Expected BOF record; found b'\r\n'
+2020-01-09 06:59:22,468 analyse.py[line:67] ERROR Unsupported format, or corrupt file: Expected BOF record; found b'\r\n'
+Traceback (most recent call last):
+  File "E:/python_workspace/autotest_interface/common/analyse.py", line 37, in export2excel
+    formatting_info=True)
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\xlrd\__init__.py", line 157, in open_workbook
+    ragged_rows=ragged_rows,
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\xlrd\book.py", line 92, in open_workbook_xls
+    biff_version = bk.getbof(XL_WORKBOOK_GLOBALS)
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\xlrd\book.py", line 1278, in getbof
+    bof_error('Expected BOF record; found %r' % self.mem[savpos:savpos+8])
+  File "D:\Program Files (x86)\Python36-32\lib\site-packages\xlrd\book.py", line 1272, in bof_error
+    raise XLRDError('Unsupported format, or corrupt file: ' + msg)
+xlrd.biffh.XLRDError: Unsupported format, or corrupt file: Expected BOF record; found b'\r\n'

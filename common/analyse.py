@@ -41,7 +41,7 @@ class AnalyseData(object):
             destination.save(filepath)#保存模板表格到新的目录下
             for name_interface in names_export:
                 cases_interface=operation_db.select_all("select * from \
-cases_interface where case_status=1 and name_interface='%s'" %(name_interface))#获取指定接口的测试用例数据
+case_interface where case_status=2 and name_interface='%s'" %(name_interface))#获取指定接口的测试用例数据
                 if len(cases_interface['data'])!=0 and cases_interface['code']=='0000':
                     srx = open_workbook(filepath,formatting_info=True)
                     destination=copy(src)
