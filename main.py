@@ -57,15 +57,48 @@ try:
                                                 result_http_response['data'])
                                             print('用例编号: %s|检查级别：参数完整性|接口名称：%|提示信息：%s\n'
                                                   %(id_case,temp_name_interface,result_compare_params_complete['message'])
-                                        elif child_level_check in [2]:#执行功能测试，待开发
-                                            pass
-                                        elif child_level_check in (3,) :#执行结构完整性检查
+                                        elif child_level_check in [2]:#执行功能测试，待开开发
+                                             pass
+                                        elif child_level_check in (3,):#执行结构完整性检查,待开发
                                             pass
                                         else:
                                             print('用例编号：%s|接口名称：%s|检查级别错误：%s\n'
                                                   %(id_case,temp_name_interface,child_level_check))
-                                        elif len(result_http_response['data'])==0:
-                                            print('用例编号：%s|接口名称')
+                                elif len(result_http_response['data'])==0:
+                                            print("用例编号：%s|接口名称：%s|错误信息:%s\n" %(id_case,temp_name_interface))
+                                else:
+                                    print('接口名称：%s|错误信息：获取用例数据失败|错误信息：%s\n' %(temp_name_interface,data_case_interface['message']))
+                        elif len(data_case_interface['data']) == 0:
+                            print('接口名称：%s|错误信息：获取用例数据为空，请检查用例\n' %(temp_name_interface))
+                        else:
+                            print('接口名称：%s|错误信息：获取用例数据失败|错误信息：%s\n' %(temp_name_interface,data_case_interface['message']))
+                            print('#######结束执行接口：%s#######\n' %(temp_name_interface))
+            else:
+                print('错误信息：待执行接口获取失败|错误信息：%s' %module_execute['message'])
+        elif value_input == '1':
+            print('您输入的是：1|导出测试结果，请注意查看目录：%s' %(config.src_path+'\\report'))
+    names_export = base_operation_interface.select_one("select value_config from config_total where status=1 and key_config='name_export'")
+    if names_export['code'] == '0000' and len(names_export['data']['value_config']) !=0:#判断查询结果
+        temp_export = eval(names_export['data']['value_config'])#获取查询数据，并将其转换成字典
+        test_analyes_data = analyse.AnalyseData()#实例化数据分析类
+        result_export = test_analyes_data.export2excel(temp_export)#导出结果
+        print(result_export['message'])
+        print("导出失败接口列表：%s\n" %result_export['data'])
+    else:
+        print("请检查配置表数据正确性，当前值为：%s\n" %names_export['data'])
+except Exception as error:#记录日志到log.txt文件
+    print("系统出现异常：%s" %error)
+    logging.basicConfig(filename=config.src_path + '\log\syserror.log', level=logging.DEBUG,
+                        format='%(asctime)s %(filename)s[line:%(lineno)d] %(levelname)s %(message)s')
+    logger = logging.getLogger(__name__)
+    logger.exception(error)
+input('Press Enter to exit...')
+
+
+
+
+
+
 
 
 
